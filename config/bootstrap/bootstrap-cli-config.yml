@@ -68,7 +68,6 @@ bootstrap:
                 idp-source-id: 9e3af437-44b9-4898-8b0f-47202aa8071d # for the AAD Group to be matched to cdf-group
                 idp-source-name: bootcamp-25-test-all-read # i.e. bootcamp-01-test-all-read
 
-    idp-cds-mappings:
     # Support multiple CDF Projects, like dev/test/prod in one config.
         - cdf-project: cdf-bootcamp-25-prod # i.e. bootcamp-01-test
           mappings:
