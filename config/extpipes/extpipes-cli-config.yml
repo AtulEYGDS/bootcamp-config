@@ -39,10 +39,23 @@ rawdbs:
       rawtables:
           - rawtable-name: assets
             pipelines:
-        # source is a short-name identifying the pipeline source being
+         # source is a short-name identifying the pipeline source being
         # a 'db-extractor (db)', an 'Azure Function (az-func)',
         # or 'Azure Data Factory (adf)', 'Python script (py)', ..
-                - source: csvS
+                - source: csv
+                  schedule: On trigger
+                  contacts:
+                      - name: Atul Kumar Pandey
+                        email: atul.kumar.pandey1@gds.ey.com
+                        role: Bootcamp 25 Administrator
+                        send-notification: false
+    - rawdb-name: src:002:opcua:db
+      dataset-external-id: src:002:opcua:ds
+      short-name: opcua
+      rawtables:
+          - rawtable-name: datapoints
+            pipelines:
+                - source: ice-cream-api
                   schedule: On trigger
                   contacts:
                       - name: Atul Kumar Pandey
